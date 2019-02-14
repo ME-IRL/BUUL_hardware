@@ -1,0 +1,240 @@
+EESchema Schematic File Version 4
+LIBS:breakout-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny10-TS U1
+U 1 1 5C61C7F3
+P 5450 3700
+F 0 "U1" H 4920 3746 50  0000 R CNN
+F 1 "ATtiny10-TS" H 4920 3655 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 5450 3700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8127-AVR-8-bit-Microcontroller-ATtiny4-ATtiny5-ATtiny9-ATtiny10_Datasheet.pdf" H 5450 3700 50  0001 C CNN
+	1    5450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5C61C85B
+P 6550 3850
+F 0 "J2" H 6630 3892 50  0000 L CNN
+F 1 "Conn_01x03" H 6630 3801 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6550 3850 50  0001 C CNN
+F 3 "~" H 6550 3850 50  0001 C CNN
+	1    6550 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J1
+U 1 1 5C61C8E6
+P 6550 3500
+F 0 "J1" H 6630 3542 50  0000 L CNN
+F 1 "Conn_01x03" H 6630 3451 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6550 3500 50  0001 C CNN
+F 3 "~" H 6550 3500 50  0001 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3400 6350 3400
+Wire Wire Line
+	5450 4300 6300 4300
+Wire Wire Line
+	6300 4300 6300 3500
+Wire Wire Line
+	6300 3500 6350 3500
+Wire Wire Line
+	6050 3500 6250 3500
+Wire Wire Line
+	6250 3500 6250 3600
+Wire Wire Line
+	6250 3600 6350 3600
+Wire Wire Line
+	6050 3600 6200 3600
+Wire Wire Line
+	6200 3600 6200 3750
+Wire Wire Line
+	6200 3750 6350 3750
+Wire Wire Line
+	5450 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 3850
+Wire Wire Line
+	6150 3850 6350 3850
+Wire Wire Line
+	6050 3700 6100 3700
+Wire Wire Line
+	6100 3700 6100 3950
+Wire Wire Line
+	6100 3950 6350 3950
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5C61D1C2
+P 3800 5300
+F 0 "J3" H 3720 4975 50  0000 C CNN
+F 1 "Conn_01x02" H 3720 5066 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3800 5300 50  0001 C CNN
+F 3 "~" H 3800 5300 50  0001 C CNN
+	1    3800 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5C61D273
+P 5700 5200
+F 0 "J5" H 5780 5192 50  0000 L CNN
+F 1 "Conn_01x02" H 5780 5101 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5700 5200 50  0001 C CNN
+F 3 "~" H 5700 5200 50  0001 C CNN
+	1    5700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5C61D321
+P 4200 5350
+F 0 "C1" H 4315 5396 50  0000 L CNN
+F 1 "4.7uF" H 4315 5305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 4238 5200 50  0001 C CNN
+F 3 "~" H 4200 5350 50  0001 C CNN
+	1    4200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5C61D3C9
+P 4500 5300
+F 0 "Q1" V 4843 5300 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 4752 5300 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 4700 5400 50  0001 C CNN
+F 3 "~" H 4500 5300 50  0001 C CNN
+	1    4500 5300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 5C61D4A6
+P 4500 5700
+F 0 "J4" V 4373 5780 50  0000 L CNN
+F 1 "Conn_01x01" V 4464 5780 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4500 5700 50  0001 C CNN
+F 3 "~" H 4500 5700 50  0001 C CNN
+	1    4500 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5C61D52C
+P 4800 5350
+F 0 "D1" V 4754 5429 50  0000 L CNN
+F 1 "D" V 4845 5429 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 4800 5350 50  0001 C CNN
+F 3 "~" H 4800 5350 50  0001 C CNN
+	1    4800 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5C61D5DF
+P 5050 5200
+F 0 "L1" V 5240 5200 50  0000 C CNN
+F 1 "10uH" V 5149 5200 50  0000 C CNN
+F 2 "we:WE" H 5050 5200 50  0001 C CNN
+F 3 "~" H 5050 5200 50  0001 C CNN
+	1    5050 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5C61D6C4
+P 5300 5350
+F 0 "C2" H 5415 5396 50  0000 L CNN
+F 1 "22uF" H 5415 5305 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 5338 5200 50  0001 C CNN
+F 3 "~" H 5300 5350 50  0001 C CNN
+	1    5300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C61D7BF
+P 4000 5300
+F 0 "#PWR0101" H 4000 5050 50  0001 C CNN
+F 1 "GND" H 4005 5127 50  0001 C CNN
+F 2 "" H 4000 5300 50  0001 C CNN
+F 3 "" H 4000 5300 50  0001 C CNN
+	1    4000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C61D843
+P 4200 5500
+F 0 "#PWR0102" H 4200 5250 50  0001 C CNN
+F 1 "GND" H 4205 5327 50  0001 C CNN
+F 2 "" H 4200 5500 50  0001 C CNN
+F 3 "" H 4200 5500 50  0001 C CNN
+	1    4200 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C61D864
+P 4800 5500
+F 0 "#PWR0103" H 4800 5250 50  0001 C CNN
+F 1 "GND" H 4805 5327 50  0001 C CNN
+F 2 "" H 4800 5500 50  0001 C CNN
+F 3 "" H 4800 5500 50  0001 C CNN
+	1    4800 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5C61D885
+P 5300 5500
+F 0 "#PWR0104" H 5300 5250 50  0001 C CNN
+F 1 "GND" H 5305 5327 50  0001 C CNN
+F 2 "" H 5300 5500 50  0001 C CNN
+F 3 "" H 5300 5500 50  0001 C CNN
+	1    5300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C61D8A6
+P 5500 5300
+F 0 "#PWR0105" H 5500 5050 50  0001 C CNN
+F 1 "GND" H 5505 5127 50  0001 C CNN
+F 2 "" H 5500 5300 50  0001 C CNN
+F 3 "" H 5500 5300 50  0001 C CNN
+	1    5500 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5200 4200 5200
+Wire Wire Line
+	4200 5200 4300 5200
+Connection ~ 4200 5200
+Wire Wire Line
+	4700 5200 4800 5200
+Wire Wire Line
+	4800 5200 4900 5200
+Connection ~ 4800 5200
+Wire Wire Line
+	5200 5200 5300 5200
+Wire Wire Line
+	5300 5200 5500 5200
+Connection ~ 5300 5200
+$EndSCHEMATC
